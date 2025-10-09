@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        img {
+            width: 350px;
+            height: 350px;
+        }
+
+        button {
+            padding: 15px 65px;
+            border: none;
+            color: white;
+            font-weight: bolder;
+        }
+
+        #addToCart {
+            background-color: orange;
+        }
+
+        #buyNow {
+            background-color: orangered;
+        }
+    </style>
+    <script>
+        function addToCart() {
+            alert('Your Item has been added to cart!!!')
+        }
+    </script>
+    <script src="./flipkart.js"></script>
+</head>
+
+<body>
+    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/backpack/a/e/j/-original-imahd893ahypckkj.jpeg?q=70&crop=false"
+        alt="">
+    <br />
+    <button id="addToCart" onclick="addToCart()">ADD TO CART</button>
+    <button id="buyNow" onclick="buyNow()">BUY NOW</button>
+
+    <hr>
+    <p>Bootstrap</p>
+    <button class="btn btn-primary">primary button</button>
+    <button class="btn btn-secondary">secondary button</button>
+    <button class="btn btn-success">success button</button>
+    <button class="btn btn-warning">warning button</button>
+    <button class="btn btn-danger">danger button</button>
+</body>
+
+</html>

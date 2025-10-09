@@ -1,0 +1,61 @@
+HTML Emmets / shortcuts
+=======================
+https://docs.emmet.io/cheat-sheet/
+
+
+!
+h1{My First HTML Program}
+ol>li*5{Car-$}
+select>option*200{Country-$}
+table>tr*50>td*5{Data-$}
+
+
+How to use CSS in HTML Files
+============================
+1. inline CSS ( style attribute ) ( Restricted to 1 Element )
+   <div style="color:blueviolet">Let's Learn CSS</div>
+2. internal CSS ( style tag ) ( Restricted to 1 File/Page )
+   <style>
+     div {
+            font-weight: bold;
+      }
+   </style>
+3. external CSS ( Application/Project Level)
+   a. write css code in a separate .css File
+   b. link that css file to HTML file using <link>
+
+
+
+How to use Bootstrap in HTML Files
+==================================
+-CSS Library : Pre-Defined CSS classnames , Responsiveness
+-maintained by twitter
+-Bootstrap 5 is the latest version
+-Official Bootstrap link : https://getbootstrap.com/
+
+Add CDN link to the <head></head> of HTML File:
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+
+
+Types of javascript
+===================
+1. internal javascript   <script></script>    Page Level
+2. External javascript   (separate .js file)
+
+
+
+How to write Javascript code and execute
+=========================================
+1. Browser (FrontEnd Development)
+   a. create a javascript file with some javascript code
+   b. include that javascript file in to HTML file 
+      <script src="./flipkart.js"></script>
+   c. open HTML file in browser ( alt+b )
+
+2. Nodejs (BackEnd Development)
+   a. create a javascript file with some javascript code
+   b. run the javascript file with the below command
+      node <filename>.js (make sure nodejs is installed)
+
+Note : Every javascript code that runs on browser might not run in nodejs and vice-versa
