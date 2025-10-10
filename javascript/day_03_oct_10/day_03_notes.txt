@@ -1,0 +1,28 @@
+Most Commonly Used javascript Objects/Classes
+==============================================
+console : log() , warn(), error(), table(), time(), timeEnd()
+window :  alert(), confirm() , prompt(), print(), close()
+document : write(), getElementById(), querySelector()
+Math :    max() , min(), sqrt(), cbrt()
+Array :  push(), pop() , slice(), mao(), filter()
+Object :  assign(), create(), keys(), values()
+
+
+window
+======
+alert : display alert message
+        message + Ok 
+
+confirm : User Confirmation
+          Message + Ok (true) + cancel (false)
+
+prompt : To Collect User input
+         Message + InputBox + Ok, Cancel
+
+Note : window object methods can be directly called
+window.alert('Hi); // valid
+alert('Hi); // valid
+
+
+Assignment:
+-Ask user to enter 2 numbers using prompt() and perform addition , display addition result

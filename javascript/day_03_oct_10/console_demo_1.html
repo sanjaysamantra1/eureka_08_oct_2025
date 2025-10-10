@@ -1,0 +1,19 @@
+<script>
+    let message = 'Hello, Good Morning!!';
+
+    console.log(message);    // information
+    console.warn(message);   // warning message
+    console.error(message);  // error message
+
+
+    let employees = [
+        { "eId": 101, "name": "sanjay", "sal": 5000, "gender": "male" },
+        { "eId": 104, "name": "geeta", "sal": 8000, "gender": "female" },
+        { "eId": 103, "name": "sameer", "sal": 7000, "gender": "male" },
+        { "eId": 102, "name": "sita", "sal": 9000, "gender": "female" },
+        { "eId": 105, "name": "deepak", "sal": 8000, "gender": "male" }
+    ];
+    console.log(employees);
+    console.table(employees,['name','sal']); // show only name and sal column
+
+</script>
