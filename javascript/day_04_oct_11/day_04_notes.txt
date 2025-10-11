@@ -1,0 +1,62 @@
+DataTypes
+=========
+1. Primitive
+2. Non-Primitive
+
+
+Primitives:
+    number : 4 , 4.5 , -2.3
+    string : 'sachin' , '10' , 'true'
+    boolean : true / false
+    undefined : undefined
+    bigint
+    symbol
+Non-Primitve : Object   ( Objects / Arrays )
+
+
+-Primitives are immutable , non-primitives are mutable
+-Primitives are compared by value , non-primitives are compared by address
+
+
+undefined vs null
+==================
+-when a variable is declared without any value, javascript assigns 'undefined' value
+-null is an intentional value assigned by developer.
+-typeof 'undefined' is undefined, typeof 'null' is object
+
+Note: even though typeof 'null' is object, null is a primitive value
+
+
+javascript : Is a programming language, follows ECMAScript standards
+ECMA : European Computer Manufecturer Association
+ECMAScript : Set of standards, followed by javascript
+
+
+ES_5  <= june 2015
+ES_6   2015
+ES_7   2016
+ES_8   2017
+ES_9   2018
+ES_10   2019
+ES_11   2020
+ES_12   2021
+ES_13   2022
+ES_14   2023
+ES_15   2024
+
+
+Variables
+=========
+-Variables in javascript can be declared by using either of the below 3 keyword
+    1. var
+    2. let
+    3. const    
+
+        var                         let                     const
+=========================================================================
+1. since begining           1. ECMAScript-6(2015)           1. ECMAScript-6(2015)
+2. value can be changed     2. value can be changed         2. value cann't be changed
+3. not mandatory            3. not mandatory                3. Initialization is mandatory
+4. can be re-declared       4. cann't be re-declared        4. cann't be re-declared
+5. function/global          5. block/function/global        5. block/function/global
+
