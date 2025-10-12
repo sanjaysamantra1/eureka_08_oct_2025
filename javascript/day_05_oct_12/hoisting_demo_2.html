@@ -1,0 +1,13 @@
+<script>
+    console.log('Before Initialization', a); // undefined
+    var a = 10;  // global
+    console.log('Before function call', a); // 10
+
+    function test() {
+        console.log('function starts', a); // undefined
+        var a = 20;  // function
+        console.log('function Ends', a); // 20
+    }
+    test();
+    console.log('After function call', a); // 10
+</script>

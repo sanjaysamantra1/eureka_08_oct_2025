@@ -1,0 +1,38 @@
+How Javascript Works
+====================
+-When a JavaScript program runs, 1 Global Execution Context (GEC) is created.
+-For every function call, a new Function Execution Context (FEC) is created.
+-Execution Context = the environment in which code executes.
+-Each execution context has two phases: 
+	1. creation phase. (Memory is allocated for variables and functions; 'var' variables are initialized with undefined)
+	2. execution phase. (Code is executed line by line; variables receive their assigned values and functions are invoked)
+
+
+https://www.youtube.com/watch?v=iLWTnMzWtj4&t=1044s
+https://www.jsv9000.app/
+
+
+Hoisting:
+=========
+-hoisting is a mechanism where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed.
+-Variables declared with var are hoisted, but their values are not initialized. They are given an initial value of undefined.
+-Variables declared with let and const are also hoisted but are not initialized. Accessing them before declaration results in a ReferenceError because they are in the "temporal dead zone."
+-Function declarations are hoisted, meaning you can call them before they appear in the code.
+
+Type			   Hoisted?			   Initialized?			  Usable before declaration?
+=========================================================================================
+var					✅ Yes				❌ Undefined			⚠️ Allowed but undefined
+let					✅ Yes				❌ No					❌ ReferenceError
+const				✅ Yes				❌ No					❌ ReferenceError
+Func Declaration	✅ Yes				✅ Yes					✅ Allowed
+Func Expression 	✅ Yes				❌ Undefined			❌ TypeError
+
+
+
+Temporal Dead Zone
+==================
+-The period between entering scope and being initialized where they cannot be accessed. 
+ This period is the temporal dead zone (TDZ).
+-The state where variables are un-reachable. They are in memory, but they aren't usable.
+-The let and const variables exist in the TDZ from the start of their enclosing scope until they are initialized.
+-if a let/const variable is accessed before its initialization, it would throw a ReferenceError. Because of the TDZ.
