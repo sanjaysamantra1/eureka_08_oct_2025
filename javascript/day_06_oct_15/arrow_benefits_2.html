@@ -1,0 +1,20 @@
+<script>
+    class Student {
+        firstName = 'Hanish';
+        lastName = 'Reddy';
+
+        fullName1() { // this = Student
+            console.log(this.firstName, this.lastName, this);
+        }
+        fullName2 = () => { // this = Student (Lexical Scope/Outer Scope)
+            console.log(this.firstName, this.lastName, this);
+        }
+    }
+    let stdObj = new Student();
+    stdObj.fullName1(); // Regular = this (how the function is called), this = Student
+    stdObj.fullName2(); // Arrow = this (where the function is written), this = Student 
+
+    setTimeout(stdObj.fullName1, 3000)
+    setTimeout(stdObj.fullName2, 6000)
+
+</script>

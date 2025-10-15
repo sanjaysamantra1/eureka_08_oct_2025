@@ -1,0 +1,46 @@
+functions
+=========
+-Reusable block of code that performs a specific job.
+1. Pre-Defined :  console.log(), Math.max()
+2. User-Defined : developers write, developers Use
+
+Different syntax to write user defined functions:
+1. Function Declaration
+2. Function Expression
+3. Arrow Function (ES_6) (2015)
+
+
+Function Declaration VS Function Expression
+============================================
+1. Function Declarations are named, function expressions are anonymous
+2. Function Declarations are Hoisted, Function expressions are not hoisted
+
+
+Arrow Function
+--------------
+-'this' value inside a regular function is dynamic and depends on the context in which it is called.
+-Arrow function doesn't have its own 'this' binding
+'this' inside the arrow function is bound lexically and equals to 'this' where the function is declared.
+-lexical context means that arrow function uses 'this' from the code that contains the arrow function.
+-Regular function ( this = how the function is invoked/who invoked )
+-Arrow function( this = where the function is declared )
+
+
+Arrow Function Limitations
+--------------------------
+-Arrow functions don't have their own bindings to this, arguments or super cann't be used inside arrow function.
+-Arrow functions don't have access to the new,target keyword.
+-Arrow functions aren't suitable for call, apply and bind methods, which generally rely on establishing a scope.
+-Arrow functions cannot be used as constructors.
+-Arrow functions cannot use yield, within its body.
+
+
+Arrow Function Benefits
+-----------------------
+-Concise syntax
+-Implicit return
+-Lexical 'this' Binding
+-no arguments object(pre-defined keyword)
+-ideal for callbacks
+-good for small functions
+-static 'this' (this doesn't change)

@@ -1,0 +1,19 @@
+<script>
+    // inside object methods, avoid arrow function
+    // this = current context
+    console.log(this);
+
+    let user = {
+        firstName: 'Virat',
+        lastName: 'Kohli',
+
+        fullName1: function () { // Regular = this (How/Where the function is called)
+            console.log(this.firstName, this.lastName, this); // this = user
+        },
+        fullName2: () => { // Arrow = this (where the function is declared)
+            console.log(this.firstName, this.lastName, this); // this = window
+        }
+    }
+    user.fullName1();
+    user.fullName2();
+</script>
