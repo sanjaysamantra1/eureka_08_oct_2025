@@ -1,0 +1,24 @@
+<script>
+    let a = 10;
+    function impure_1() {
+        a = 15;
+        console.log(a)
+    }
+    impure_1();
+
+    function impure_2(a, b) {
+        console.log(a + b);
+    }
+    impure_2(10, 20); // impure : doesnot return a value
+
+    function impure_3(a, b) {
+        return 'Hello';
+    }
+    impure_3(10, 20);
+
+
+    function add(a, b) { // pure
+        return a + b;
+    }
+    console.log(add(2, 3))
+</script>

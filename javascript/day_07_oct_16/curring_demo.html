@@ -1,0 +1,17 @@
+<script>
+    // regular Function : 1 function with many arguments
+    function add(a, b, c) {
+        console.log(`Addition of ${a}, ${b}, ${c} is ${a + b + c}`);
+    }
+    add(10, 20, 30);
+
+    // curried : many functions with 1 argument
+    let sum = function (a) {
+        return function (b) {
+            return function (c) {
+                console.log(`Addition of ${a}, ${b}, ${c} is ${a + b + c}`);
+            }
+        }
+    }
+    sum(10)(20)(30);
+</script>

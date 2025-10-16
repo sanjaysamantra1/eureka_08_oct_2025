@@ -1,0 +1,14 @@
+<script>
+    function f1() {  // f1 is higherOrder : f1 returns another function
+        console.log('I am f1...')
+        return function f2() {
+            console.log('I am f2...')
+        }
+    }
+    f1()();
+
+    let arr = [10, 20, 30, 40, 50];
+    let incrementedValue = arr.map((ele) => { // map() higherOrder , ()=> is callback
+        console.log(ele);
+    })
+</script>

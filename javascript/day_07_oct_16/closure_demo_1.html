@@ -1,0 +1,20 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+
+    function f1() { // outer function
+        let d = 40;
+        function f2() { // inner function
+            let e = 50;
+            console.log(a, b, c, d, e);
+        }
+        f2();
+        console.dir(f2)
+    }
+    f1();
+    console.dir(f1);
+
+    // outer functions will never have closure scope
+    // inner function will have closure scope, only if inner function accesses outer function data
+</script>
