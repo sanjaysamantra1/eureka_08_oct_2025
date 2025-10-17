@@ -1,0 +1,39 @@
+String
+======
+-How do we declare string variables
+    let str = 'sachin';
+    let str = "Sachin";
+-few valid strings
+  'hello "good mornign"'; // valid
+  "hello 'good mornign'"; // valid
+  'hello 'good mornign''; // in-valid
+
+
+String methods:
+--------------
+length;
+toUpperCase();
+toLowerCase();
+charAt();
+at()
+charCodeAt();
+concat();
+indexOf();
+lastIndexOf();
+includes();
+startsWith()
+endsWith()
+match();
+matchAll()   // returns iterator
+replace();
+replaceAll();
+repeat();
+slice(start, end)
+substring(start, end)
+substr(start, length)
+split()
+search(regex)
+trim()
+eval(); (eval() is from Window Object)
+localeCompare()
+N.p:- substring() cannot accept negative indexes. slice() does.
