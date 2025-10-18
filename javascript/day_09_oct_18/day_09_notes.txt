@@ -1,0 +1,31 @@
+Array
+======
+-Arrays are used to store multiple values in a single variable.
+ ex : let nums = [10,20,30,40,50];
+
+-in javascript, arrays can have heterogenous elements
+  ex : [ 10 , 'virat' , true , {} ,[] ]
+
+-Iterating Array elements:
+    1.for-loop   2.for-in  3.for-of  4. forEach()
+
+
+properties: length , delete
+
+instance functions: at(),concat(),entries(),every(),fill(),filter(),find(),findLast(),findIndex(),flat(),
+flatMap(),forEach(),includes(),indexOf(),join(),keys(),lastIndexOf(),map(),pop(),push()
+reduce(), reverse(), shift(),slice(),sort(),some(), splice(),unshift(),values()
+
+static functions : from(),isArray(),of()
+
+
+To add/remove elements:
+	push(...items) – adds items to the end,
+	pop() – extracts an item from the end,
+	shift() – extracts an item from the beginning,
+	unshift(...items) – adds items to the beginning.
+	splice(pos, deleteCount, ...items) – at index pos delete deleteCount elements and insert items.
+	toSpliced()   - doesn't change the original array
+	slice(start, end) – creates a new array, copies elements from position start till end (not inclusive) into it.
+	concat(...items) – returns a new array: copies all members of the current one and adds items to it. If any of items is an array, then its elements are taken.
+	with(ind,newValue) - Create a new array with a single element changed
