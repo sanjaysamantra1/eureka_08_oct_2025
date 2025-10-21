@@ -1,0 +1,29 @@
+<script>
+  const romanMap = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+  };
+
+  function romanToInt(romanStr) {
+    let total = 0;
+    // VII
+    for (let i = 0; i < romanStr.length; i++) {
+      let current = romanMap[romanStr[i]]; // V = 5
+      let next = romanMap[romanStr[i + 1]]; // I = 1
+      if (current < next) {
+        total = total - current;
+      } else {
+        total = total + current;
+      }
+    }
+    return total;
+  }
+
+  console.log(romanToInt("IX")); // 9
+  console.log(romanToInt("VII")); // 7
+</script>
