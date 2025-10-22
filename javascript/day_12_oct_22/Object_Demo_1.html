@@ -1,0 +1,23 @@
+<script>
+  let user = { name: "sachin", "last name":"tendulkar" ,age: 35, add: "mumbai" };
+  console.log(user);
+
+  console.log(user.name); // sachin
+  console.log(user["age"]); // 35
+
+//   console.log(user.last name); 
+  console.log(user['last name']);  // when object key contains space
+
+  let a = 'add'; // when an object key is stored in a variable
+  console.log(user.a);  // undefined , looks for 'a' inside user
+  console.log(user[a]); // mumbai , looks for 'add' inside user
+
+
+  for(key in user){
+    console.log(key+" ====== "+user[key]);
+  }
+
+
+  let all_keys = Object.keys(user);
+  console.log(all_keys , all_keys.length)
+</script>

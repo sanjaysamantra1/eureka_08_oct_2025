@@ -1,0 +1,36 @@
+<script>
+  class Student {
+    constructor(roll, name, course, gender) {
+      this.roll = roll;
+      this.name = name;
+      this.course = course;
+      this.gender = gender;
+      //   this.clgName = "Eureka";
+    }
+    nameWithSalutation() {// prototype function
+      console.log(`${this.gender === "male" ? "Mr. " : "Miss. "} ${this.name}`);
+    }
+    f2 = function () { // not prototype
+      console.log("I am f1...");
+    }
+  }
+  Student.prototype.clgName = "Eureka";
+  Student.prototype.f1 = function () {
+    console.log("I am f1...");
+  };
+
+  let std1 = new Student(1, "sai nath", "Angular", "male");
+  let std2 = new Student(2, "Sreeja", "SQL", "female");
+  console.log(std1);
+  console.log(std2);
+  console.log(std1.roll, std1.name, std1.course, std1.clgName);
+  console.log(std2.roll, std2.name, std2.course, std2.clgName);
+  // 1000 * 3 = 3000, 1000 * 4 = 4000
+  console.log("==========================================");
+  std1.clgName = "Eureka Infotech"; // direct property on std1
+  //   Student.prototype.clgName = "Eureka Infotech";
+  console.log(std1.roll, std1.name, std1.course, std1.clgName);
+  console.log(std2.roll, std2.name, std2.course, std2.clgName);
+
+  // when a property is directly present in an object & the same property os also present in prototype, preference is given to direct field
+</script>

@@ -1,0 +1,15 @@
+<script>
+  let arr = [10, 20, 30, 40, 50];
+
+  Array.prototype.sum = function () {
+    let sum = this.reduce((sum, ele) => sum + ele);
+    return sum;
+  };
+  Array.prototype.avg = function () {
+    let sum = this.reduce((sum, ele) => sum + ele);
+    return sum / this.length;
+  };
+
+  console.log(arr.sum()); // 150
+  console.log(arr.avg()); // 30
+</script>
